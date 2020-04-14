@@ -142,7 +142,7 @@ extension ViewController: ARSCNViewDelegate {
     func displayPyramid(on rootNode: SCNNode) {
         DispatchQueue.main.async {
             
-            let pyramidScene = SCNScene(named: "art.scnassets/pyramid.scn")
+            let pyramidScene = SCNScene(named: "art.scnassets/aqorda.scn")
             
             guard let pyramidNode = pyramidScene?.rootNode.childNode(withName: "parent", recursively: false) else {
                 return
@@ -164,7 +164,7 @@ extension ViewController: ARSCNViewDelegate {
         DispatchQueue.main.async {
             
             // Open Google
-            let request = URLRequest(url: URL(string: "https://www.google.kz")!)
+            let request = URLRequest(url: URL(string: "https://youtu.be/7ehEPsrw1X8")!)
             
             // Define size for Web View, use UI instead WK due to bug
             let webView = UIWebView(frame: CGRect(x: 0, y: 0, width: 600, height: 900))
